@@ -1,0 +1,9 @@
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.csproj.AssemblyReference.cache
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.AssemblyInfoInputs.cache
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.AssemblyInfo.cs
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.csproj.CoreCompileInputs.cache
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.RazorAssemblyInfo.cache
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.RazorAssemblyInfo.cs
