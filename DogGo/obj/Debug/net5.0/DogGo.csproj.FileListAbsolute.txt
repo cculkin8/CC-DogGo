@@ -386,3 +386,7 @@ C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.dll
 C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\ref\DogGo.dll
 C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.pdb
 C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\DogGo.genruntimeconfig.cache
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\Razor\Views\Dogs\Create.cshtml.g.cs
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\Razor\Views\Dogs\Delete.cshtml.g.cs
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\Razor\Views\Dogs\Details.cshtml.g.cs
+C:\Users\carte\workspace\cc-backend\DogGo\DogGo\obj\Debug\net5.0\Razor\Views\Dogs\Edit.cshtml.g.cs

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace DogGo.Models
@@ -10,6 +11,7 @@ namespace DogGo.Models
         public string Address { get; set; }
         public int NeighborhoodId { get; set; }
         public Neighborhood Neighborhood { get; set; }
+        public List <Dog> Dogs { get; set; }
         [Required(ErrorMessage = "You must provide a phone number")]
         [Display(Name = "Phone Number")]
         [DataType(DataType.PhoneNumber)]

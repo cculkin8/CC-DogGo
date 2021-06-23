@@ -45,7 +45,7 @@ namespace DogGo.Repositories
                             Name = reader.GetString(reader.GetOrdinal("Name")),
                             Address = reader.GetString(reader.GetOrdinal("Address")),
                             NeighborhoodId = reader.GetInt32(reader.GetOrdinal("NeighborhoodId")),
-                            Phone = reader.GetString(reader.GetOrdinal("Phone"))
+                            Phone = reader.GetString(reader.GetOrdinal("Phone")),
                         };
 
                         owners.Add(owner);
@@ -65,34 +65,32 @@ namespace DogGo.Repositories
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"
-                                        SELECT Id, Email, [Name], Address, NeighborhoodId, Phone
-                                        FROM Owner
-                                        WHERE Id = @id";
+                                        SELECT o.Id, o.Email, o.[Name], o.[Address], o.NeighborhoodId, o.Phone
+                                        FROM Owner o
+                                        WHERE o.Id = @id";
 
                     cmd.Parameters.AddWithValue("@id", id);
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    if (reader.Read())
+                    Owner owner = null;
+
+                    while (reader.Read())
                     {
-                        Owner owner = new Owner
+                        owner = new Owner
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Email = reader.GetString(reader.GetOrdinal("Email")),
                             Name = reader.GetString(reader.GetOrdinal("Name")),
                             Address = reader.GetString(reader.GetOrdinal("Address")),
                             NeighborhoodId = reader.GetInt32(reader.GetOrdinal("NeighborhoodId")),
-                            Phone = reader.GetString(reader.GetOrdinal("Phone"))
-                        };
+                            Phone = reader.GetString(reader.GetOrdinal("Phone")),
 
-                        reader.Close();
-                        return owner;
+                        };
                     }
-                    else
-                    {
-                        reader.Close();
-                        return null;
-                    }
+
+                    reader.Close();
+                    return owner;
                 }
             }
         }
@@ -212,6 +210,5 @@ namespace DogGo.Repositories
                 }
             }
         }
-
     }
 }
